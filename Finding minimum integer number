@@ -1,0 +1,40 @@
+// Finding minimum number
+// run this program using the console pauser or add your own getch, system("pause") or input loop
+
+#include <iostream>
+using namespace std;
+
+int Min(int num1 , int num2){
+	int r;
+	if ( num1 < num2){
+		r = num1;
+	}else {
+		r= num2;
+	}
+	return r;
+}
+double Min(double num1 , double num2){
+	double r;
+	if ( num1 < num2){
+		r = num1;
+	}else {
+		r= num2;
+	}
+	return r;
+}
+int main(int argc, char** argv) {
+	int a,b; double c,d;
+	
+	cout << " Enter two integer numbers :" << endl;
+	cin >> a >>b ;
+	cout << " Enter two double numbers :" << endl;
+	cin >> c >> d;
+	
+	int r1 =Min(a,b) ;
+	cout << " The minimum integer number : " << r1 << endl;
+	double r2=Min(c,d);
+	cout << " The minimum double number : " << r2 << endl;
+
+	
+	return 0;
+}
